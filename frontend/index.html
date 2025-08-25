@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Influencer Gear | Professional Equipment for Content Creators</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4ee108a205.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#E02C6D',
+              secondary: '#0A0826',
+              accent: '#3F3A64',
+              light: '#F9F9F9',
+            },
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'],
+              poppins: ['Poppins', 'sans-serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/css">
+      .gradient-bg {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+      .hero-gradient {
+        background: linear-gradient(97.05deg, #e02c6d 3.76%, #ff2e7a 100%);
+      }
+      .product-card {
+        transition: all 0.3s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+      .hero-pattern {
+        background-color: #f9fafb;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e02c6d' fill-opacity='0.09'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+      .cart-panel {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      .cart-panel.open {
+        transform: translateX(0);
+      }
+      .cart-badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: #e02c6d;
+        color: white;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body class="font-inter bg-white text-gray-800 antialiased">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+      <div class="container mx-auto px-4">
+        <nav class="flex items-center justify-between py-5">
+          <a href="#" class="text-2xl font-bold text-primary"
+            >Influencer<span class="text-secondary">Gear</span></a
+          >
+
+          <div class="hidden md:flex space-x-8">
+            <a href="#" class="font-medium hover:text-primary transition-colors"
+              >Home</a
+            >
+            <a
+              href="#products"
+              class="font-medium hover:text-primary transition-colors"
+              >Products</a
+            >
+            <a href="#" class="font-medium hover:text-primary transition-colors"
+              >Sign up</a
+            >
+            <a href="#" class="font-medium hover:text-primary transition-colors"
+              >Log in</a
+            >
+          </div>
+
+          <div class="flex items-center space-x-6">
+            <button class="p-2 rounded-full hover:bg-gray-100">
+              <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            </button>
+            <button
+              id="cartButton"
+              class="p-2 rounded-full hover:bg-gray-100 relative"
+            >
+              <i class="fa-solid fa-cart-shopping text-xl"></i>
+              <span class="cart-badge" id="cartCount">0</span>
+            </button>
+            <button class="md:hidden p-2 rounded-full hover:bg-gray-100">
+              <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern py-12 md:py-20">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight mb-6"
+            >
+              Start Your Journey as an Influencer
+            </h1>
+            <p class="text-gray-600 text-lg mb-8">
+              Discover the best equipment to create stunning content and grow
+              your audience with professional-grade tools designed for modern
+              creators.
+            </p>
+            <button
+              class="bg-primary text-white font-medium py-3 px-6 rounded-full flex items-center space-x-2 hover:bg-opacity-90 transition-all shadow-lg shadow-pink-200"
+            >
+              <span>Prebook Now</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div class="relative">
+              <div
+                class="absolute -inset-6 bg-gradient-to-r from-primary to-pink-400 rounded-full blur-lg opacity-20"
+              ></div>
+              <img
+                src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Content Creator"
+                class="relative z-10 w-full max-w-md rounded-2xl shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-center text-xl text-gray-700 font-medium mb-10">
+          Trusted by leading companies worldwide
+        </h2>
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 items-center justify-items-center"
+        >
+          <img
+            src="logos/Amazon.svg"
+            alt="Amazon"
+            class="h-8 opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+          />
+          <img
+            src="logos/Alibaba.svg"
+            alt="Alibaba"
+            class="h-16 opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+          />
+          <img
+            src="logos/Ebay.svg"
+            alt="Ebay"
+            class="h-8 opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+          />
+          <img
+            src="logos/Rakuten.svg"
+            alt="Rakuten"
+            class="h-8 opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+          />
+          <img
+            src="logos/Target.svg"
+            alt="Target"
+            class="h-12 opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+          />
+          <img
+            src="logos/Walmart.svg"
+            alt="Walmart"
+            class="h-8 opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+          />
+          <img
+            src="logos/Daraz.pk Logo.svg"
+            alt="Daraz"
+            class="h-8 opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Products Section -->
+    <section id="products" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">Popular Collection</h2>
+        <p class="text-gray-600 text-center mb-12">
+          Discover our most popular products for content creators
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Product 1 -->
+          <div
+            class="product-card bg-white rounded-xl p-6 shadow-md border border-gray-100"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Premium Headphones"
+              class="w-full h-56 object-contain mb-4 rounded-lg"
+            />
+            <h3 class="font-semibold text-xl mb-2">Premium Headphones</h3>
+            <p class="text-2xl font-bold text-secondary mb-2">$120.99</p>
+            <div class="flex items-center mb-3">
+              <div class="flex text-amber-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="ml-2 text-gray-600">4.5</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Crystal clear audio quality for recording and listening. Perfect
+              for podcasting and audio content.
+            </p>
+            <button
+              class="add-to-cart w-full bg-primary text-white py-2 rounded-lg font-medium hover:bg-opacity-90 transition-colors"
+              data-id="1"
+              data-name="Premium Headphones"
+              data-price="120.99"
+              data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="product-card bg-white rounded-xl p-6 shadow-md border border-gray-100"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="4K Camera"
+              class="w-full h-56 object-contain mb-4 rounded-lg"
+            />
+            <h3 class="font-semibold text-xl mb-2">4K Professional Camera</h3>
+            <p class="text-2xl font-bold text-secondary mb-2">$899.99</p>
+            <div class="flex items-center mb-3">
+              <div class="flex text-amber-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="ml-2 text-gray-600">4.9</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Capture stunning 4K video and high-resolution photos with this
+              professional camera.
+            </p>
+            <button
+              class="add-to-cart w-full bg-primary text-white py-2 rounded-lg font-medium hover:bg-opacity-90 transition-colors"
+              data-id="2"
+              data-name="4K Professional Camera"
+              data-price="899.99"
+              data-image="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="product-card bg-white rounded-xl p-6 shadow-md border border-gray-100"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1164&q=80"
+              alt="Smart Watch"
+              class="w-full h-56 object-contain mb-4 rounded-lg"
+            />
+            <h3 class="font-semibold text-xl mb-2">Smart Watch Pro</h3>
+            <p class="text-2xl font-bold text-secondary mb-2">$249.99</p>
+            <div class="flex items-center mb-3">
+              <div class="flex text-amber-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <span class="ml-2 text-gray-600">4.0</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Track your fitness goals and stay connected with this
+              feature-packed smartwatch.
+            </p>
+            <button
+              class="add-to-cart w-full bg-primary text-white py-2 rounded-lg font-medium hover:bg-opacity-90 transition-colors"
+              data-id="3"
+              data-name="Smart Watch Pro"
+              data-price="249.99"
+              data-image="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1164&q=80"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#"
+            class="inline-flex items-center text-primary font-semibold text-lg hover:underline"
+          >
+            See More
+            <i class="fa-solid fa-arrow-right-long ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mb-16"
+        >
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <img
+              src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1021&q=80"
+              alt="Content Creator Setup"
+              class="rounded-2xl shadow-xl w-full"
+            />
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <h2 class="text-3xl font-bold mb-6">
+              Premium Equipment for Professional Results
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Our carefully curated selection of influencer equipment is
+              designed to help you create stunning content that stands out. From
+              beginner essentials to professional gear, we have everything you
+              need to start your journey.
+            </p>
+            <button
+              class="bg-primary text-white font-medium py-3 px-6 rounded-full flex items-center space-x-2 hover:bg-opacity-90 transition-all"
+            >
+              <span>Explore Products</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row-reverse items-center justify-between"
+        >
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <img
+              src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1142&q=80"
+              alt="Creator Workspace"
+              class="rounded-2xl shadow-xl w-full"
+            />
+          </div>
+          <div class="md:w-1/2 md:pr-12">
+            <h2 class="text-3xl font-bold mb-6">
+              Designed for Creators, by Creators
+            </h2>
+            <p class="text-gray-600 mb-6">
+              We understand the unique needs of content creators because we are
+              creators ourselves. Our products are tested and approved by
+              professional influencers to ensure they meet the highest
+              standards.
+            </p>
+            <button
+              class="bg-primary text-white font-medium py-3 px-6 rounded-full flex items-center space-x-2 hover:bg-opacity-90 transition-all"
+            >
+              <span>Join Our Community</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 gradient-bg">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">
+          What Our Customers Say
+        </h2>
+        <p class="text-gray-600 text-center mb-12">
+          Hear from successful creators who use our products
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-6 rounded-2xl shadow-md">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                alt="Sarah Johnson"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div class="ml-4">
+                <h4 class="font-semibold">Sarah Johnson</h4>
+                <p class="text-gray-500 text-sm">Lifestyle Influencer</p>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "The camera I bought from InfluencerGear completely transformed my
+              content quality. My engagement has increased by 65% since
+              upgrading!"
+            </p>
+            <div class="flex text-amber-400 mt-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-6 rounded-2xl shadow-md">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Michael Chen"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div class="ml-4">
+                <h4 class="font-semibold">Michael Chen</h4>
+                <p class="text-gray-500 text-sm">Travel Vlogger</p>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "The drone and accessories I purchased have taken my travel
+              content to the next level. The quality is exceptional and the
+              customer service is top-notch."
+            </p>
+            <div class="flex text-amber-400 mt-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-6 rounded-2xl shadow-md">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Jessica Williams"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div class="ml-4">
+                <h4 class="font-semibold">Jessica Williams</h4>
+                <p class="text-gray-500 text-sm">Beauty Influencer</p>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "The lighting equipment and microphone have made such a difference
+              in my tutorials. My viewers constantly compliment the professional
+              quality of my videos now."
+            </p>
+            <div class="flex text-amber-400 mt-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-secondary text-white">
+      <div class="container mx-auto px-4">
+        <div
+          class="max-w-3xl mx-auto text-center rounded-2xl p-8 hero-gradient"
+        >
+          <h2 class="text-3xl font-bold mb-4">
+            Stay Updated with New Arrivals
+          </h2>
+          <p class="mb-6">
+            Subscribe to our newsletter to get notified about exclusive deals,
+            new products, and content creation tips.
+          </p>
+          <form class="flex flex-col sm:flex-row gap-4">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="flex-grow px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-gray-800"
+            />
+            <button
+              type="submit"
+              class="bg-white text-primary font-medium px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping Cart Panel -->
+    <div
+      id="cartPanel"
+      class="cart-panel fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-2xl z-50 overflow-y-auto"
+    >
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold">Your Cart</h2>
+          <button id="closeCart" class="p-2 rounded-full hover:bg-gray-100">
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+
+        <div id="cartItems" class="mb-6">
+          <!-- Cart items will be dynamically inserted here -->
+          <div class="text-center py-8 text-gray-500" id="emptyCart">
+            <i class="fa-solid fa-cart-shopping text-4xl mb-4 opacity-30"></i>
+            <p>Your cart is empty</p>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-200 pt-4 mb-6">
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">Subtotal</span>
+            <span class="font-medium" id="cartSubtotal">$0.00</span>
+          </div>
+          <div class="flex justify-between mb-4">
+            <span class="font-medium">Shipping</span>
+            <span class="font-medium" id="cartShipping">$0.00</span>
+          </div>
+          <div class="flex justify-between text-lg font-bold">
+            <span>Total</span>
+            <span id="cartTotal">$0.00</span>
+          </div>
+        </div>
+
+        <button
+          id="checkoutButton"
+          class="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled
+        >
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+
+    <!-- Cart Backdrop -->
+    <div
+      id="cartBackdrop"
+      class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"
+    ></div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">
+              Influencer<span class="text-primary">Gear</span>
+            </h3>
+            <p class="text-gray-400">
+              Premium equipment for content creators who demand the best.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">Customer Service</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Returns & Refunds</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Shipping Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">Contact Info</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                <span>123 Creator Street, Content City</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fa-solid fa-phone mr-2"></i>
+                <span>+1 (555) 123-4567</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fa-solid fa-envelope mr-2"></i>
+                <span>support@influencergear.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 mb-4 md:mb-0">
+            Copyright &copy; 2023 Influencer Gear. All rights reserved.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-primary text-white shadow-lg flex items-center justify-center opacity-0 invisible transition-all"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Cart functionality
+      let cart = [];
+      const cartPanel = document.getElementById('cartPanel');
+      const cartBackdrop = document.getElementById('cartBackdrop');
+      const cartButton = document.getElementById('cartButton');
+      const closeCart = document.getElementById('closeCart');
+      const cartItems = document.getElementById('cartItems');
+      const emptyCart = document.getElementById('emptyCart');
+      const cartCount = document.getElementById('cartCount');
+      const cartSubtotal = document.getElementById('cartSubtotal');
+      const cartShipping = document.getElementById('cartShipping');
+      const cartTotal = document.getElementById('cartTotal');
+      const checkoutButton = document.getElementById('checkoutButton');
+
+      // Add to cart buttons
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+      // Open cart
+      cartButton.addEventListener('click', () => {
+        cartPanel.classList.add('open');
+        cartBackdrop.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      });
+
+      // Close cart
+      closeCart.addEventListener('click', closeCartPanel);
+      cartBackdrop.addEventListener('click', closeCartPanel);
+
+      function closeCartPanel() {
+        cartPanel.classList.remove('open');
+        cartBackdrop.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      // Add to cart functionality
+      addToCartButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const id = button.getAttribute('data-id');
+          const name = button.getAttribute('data-name');
+          const price = parseFloat(button.getAttribute('data-price'));
+          const image = button.getAttribute('data-image');
+
+          // Check if product already in cart
+          const existingItem = cart.find((item) => item.id === id);
+
+          if (existingItem) {
+            existingItem.quantity += 1;
+          } else {
+            cart.push({
+              id,
+              name,
+              price,
+              image,
+              quantity: 1,
+            });
+          }
+
+          updateCart();
+
+          // Show confirmation
+          button.innerHTML =
+            'Added to Cart <i class="fa-solid fa-check ml-2"></i>';
+          button.classList.remove('bg-primary');
+          button.classList.add('bg-green-500');
+
+          setTimeout(() => {
+            button.innerHTML = 'Add to Cart';
+            button.classList.remove('bg-green-500');
+            button.classList.add('bg-primary');
+          }, 2000);
+
+          // Open cart if not already open
+          if (!cartPanel.classList.contains('open')) {
+            cartPanel.classList.add('open');
+            cartBackdrop.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      // Update cart display
+      function updateCart() {
+        // Update cart count
+        const totalItems = cart.reduce(
+          (total, item) => total + item.quantity,
+          0
+        );
+        cartCount.textContent = totalItems;
+
+        // Clear cart items
+        cartItems.innerHTML = '';
+
+        if (cart.length === 0) {
+          cartItems.appendChild(emptyCart);
+          checkoutButton.disabled = true;
+        } else {
+          emptyCart.remove();
+          checkoutButton.disabled = false;
+
+          // Add items to cart
+          cart.forEach((item) => {
+            const cartItem = document.createElement('div');
+            cartItem.className =
+              'flex items-center py-4 border-b border-gray-200';
+            cartItem.innerHTML = `
+                        <img src="${item.image}" alt="${
+                          item.name
+                        }" class="w-16 h-16 object-cover rounded-lg">
+                        <div class="ml-4 flex-grow">
+                            <h4 class="font-medium">${item.name}</h4>
+                            <p class="text-gray-600">$${item.price.toFixed(
+                              2
+                            )}</p>
+                            <div class="flex items-center mt-1">
+                                <button class="decrease-quantity text-gray-500 hover:text-primary" data-id="${
+                                  item.id
+                                }">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span class="mx-2">${item.quantity}</span>
+                                <button class="increase-quantity text-gray-500 hover:text-primary" data-id="${
+                                  item.id
+                                }">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-medium">$${(
+                              item.price * item.quantity
+                            ).toFixed(2)}</p>
+                            <button class="remove-item text-red-500 hover:text-red-700 mt-2" data-id="${
+                              item.id
+                            }">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                    `;
+            cartItems.appendChild(cartItem);
+          });
+
+          // Add event listeners to quantity buttons
+          document.querySelectorAll('.increase-quantity').forEach((button) => {
+            button.addEventListener('click', () => {
+              const id = button.getAttribute('data-id');
+              const item = cart.find((item) => item.id === id);
+              item.quantity += 1;
+              updateCart();
+            });
+          });
+
+          document.querySelectorAll('.decrease-quantity').forEach((button) => {
+            button.addEventListener('click', () => {
+              const id = button.getAttribute('data-id');
+              const item = cart.find((item) => item.id === id);
+              item.quantity -= 1;
+
+              if (item.quantity === 0) {
+                cart = cart.filter((item) => item.id !== id);
+              }
+
+              updateCart();
+            });
+          });
+
+          document.querySelectorAll('.remove-item').forEach((button) => {
+            button.addEventListener('click', () => {
+              const id = button.getAttribute('data-id');
+              cart = cart.filter((item) => item.id !== id);
+              updateCart();
+            });
+          });
+        }
+
+        // Update totals
+        const subtotal = cart.reduce(
+          (total, item) => total + item.price * item.quantity,
+          0
+        );
+        const shipping = subtotal > 0 ? 15.0 : 0;
+        const total = subtotal + shipping;
+
+        cartSubtotal.textContent = `$${subtotal.toFixed(2)}`;
+        cartShipping.textContent = `$${shipping.toFixed(2)}`;
+        cartTotal.textContent = `$${total.toFixed(2)}`;
+      }
+
+      // Checkout button
+      checkoutButton.addEventListener('click', () => {
+        alert(
+          'Thank you for your purchase! This is a demo site, so no real transaction occurred.'
+        );
+        cart = [];
+        updateCart();
+        closeCartPanel();
+      });
+
+      // Back to top button functionality
+      const backToTopButton = document.getElementById('backToTop');
+
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove('opacity-0', 'invisible');
+          backToTopButton.classList.add('opacity-100', 'visible');
+        } else {
+          backToTopButton.classList.remove('opacity-100', 'visible');
+          backToTopButton.classList.add('opacity-0', 'invisible');
+        }
+      });
+
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      });
+
+      // Initialize cart
+      updateCart();
+    </script>
+  </body>
+</html>
